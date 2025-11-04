@@ -5,7 +5,7 @@ const TopSearches = ()=> {
   const [topSearches, setTopSearches] = useState([]);
 
   useEffect(() => {
-    // Fetch top searches on component load
+    
     async function fetchTopSearches() {
       try {
         const res = await axios.get('/api/top-searches');

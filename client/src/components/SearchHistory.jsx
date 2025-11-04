@@ -5,7 +5,7 @@ const SearchHistory = () => {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    // Fetch history on component load
+   
     async function fetchHistory() {
       try {
         const res = await axios.get('/api/history');

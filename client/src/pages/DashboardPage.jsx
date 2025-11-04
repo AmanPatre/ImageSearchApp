@@ -12,26 +12,26 @@ const DashboardPage = ({ user }) => {
   const [selectedImages, setSelectedImages] = useState([]);
   const [lastSearchTerm, setLastSearchTerm] = useState('');
 
-  // This function is passed down to <SearchBar>
+ 
   const handleSearch = async (term) => {
     try {
       const res = await axios.post('/api/search', { term });
       setSearchResults(res.data);
       setLastSearchTerm(term);
-      setSelectedImages([]); // Clear selection on new search
+      setSelectedImages([]); 
       
-      // In a real app, you'd also trigger a refresh of TopSearches and SearchHistory here
+      
     } catch (err) {
       console.error("Error searching images", err);
     }
   };
 
-  // This function is passed down to <ImageGrid> and <ImageCard>
+ 
   const handleImageSelect = (id) => {
     setSelectedImages((prevSelected) =>
       prevSelected.includes(id)
         ? prevSelected.filter((imgId) => imgId !== id)
-        // Add id if it doesn't exist
+       
         : [...prevSelected, id]
     );
   };
@@ -43,11 +43,11 @@ const DashboardPage = ({ user }) => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           
-          {/* --- Main Content (Left Side) --- */}
+          
           <div className="lg:col-span-3">
             <SearchBar onSearch={handleSearch} />
             
-            {/* --- Results Header --- */}
+            
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold text-gray-800">
                 {lastSearchTerm 
@@ -69,7 +69,7 @@ const DashboardPage = ({ user }) => {
             />
           </div>
 
-          {/* --- Sidebar (Right Side) --- */}
+          
           <div className="lg:col-span-1 space-y-8">
             <TopSearches />
             <SearchHistory />

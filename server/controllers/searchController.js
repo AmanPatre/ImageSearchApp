@@ -12,7 +12,7 @@ exports.searchImages = async (req, res) => {
   }
 
   try {
-    // 1. Log the search in our database
+    
     const search = new Search({
       term,
       _user: req.user.id,
@@ -20,7 +20,7 @@ exports.searchImages = async (req, res) => {
     });
     await search.save();
 
-    // 2. Call the Unsplash API
+    
     const response = await axios.get(UNSPLASH_BASE_URL, {
       params: { 
         query: term, 
@@ -31,7 +31,7 @@ exports.searchImages = async (req, res) => {
       }
     });
 
-    // 3. Send results back to the client
+    
     res.send(response.data.results);
   } catch (err) {
     console.error(err);
