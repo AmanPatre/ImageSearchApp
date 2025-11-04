@@ -17,6 +17,17 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) application built t
 
 ## 🖼️ Visual Proof
 
+Here is a quick demo of the complete application flow, from login to search, multi-select, and logout.
+
+*(Action Required: You will need to record your GIF, add it to your repo (e.g., in a `/docs` folder), and replace the URL below.)*
+
+![App Demo GIF](![task_gifcompress](https://github.com/user-attachments/assets/8321ce7c-44fe-4ee6-9adc-b84be1981b07)
+)
+
+---
+
+### Static Screenshots
+
 | 1. Login Page | 2. Main Dashboard (After Search) |
 | :---: | :---: |
 | ![Login Page](https://github.com/user-attachments/assets/7244abd7-80ab-4c63-a201-b3db8aa20a4c) | ![Main Dashboard](https://github.com/user-attachments/assets/a3018655-521f-4a9f-8c14-e3c0de4cec64) |
