@@ -21,9 +21,13 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) application built t
 
 | 1. Login Page | 2. Main Dashboard (After Search) |
 | :---: | :---: |
-| ![Login Page](docs/01-login-page.png) | ![Main Dashboard](docs/02-dashboard-search.png) |
+| ![Login Page](<img width="817" height="787" alt="image" src="https://github.com/user-attachments/assets/7244abd7-80ab-4c63-a201-b3db8aa20a4c" />
+) | ![Main Dashboard](<img width="1884" height="870" alt="image" src="https://github.com/user-attachments/assets/02de5863-76ff-43a9-b212-5b8047662170" />
+) |
 | **3. Multi-Select Feature** | **4. Sidebar (Top Search & History)** |
-| ![Multi-Select](docs/03-multi-select.png) | ![Sidebar](docs/04-sidebar-history.png) |
+| ![Multi-Select](<img width="1863" height="881" alt="image" src="https://github.com/user-attachments/assets/a2c7a7db-038f-4dbd-bed3-7c48472f4d2c" />
+) | ![Sidebar](<img width="463" height="682" alt="image" src="https://github.com/user-attachments/assets/ae644b95-d05b-44b6-8963-13c06dee158e" />
+) |
 
 ---
 
